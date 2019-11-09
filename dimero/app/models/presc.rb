@@ -1,0 +1,2 @@
+class Presc < ApplicationRecord
+end
