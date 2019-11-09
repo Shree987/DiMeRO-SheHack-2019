@@ -1,6 +1,26 @@
-<div class="container">
-  <div class="jumbotron text-dark">
-DiMeRO
+      <div class="view" style="background-image: url('https://www.thehealthy.com/wp-content/uploads/2016/11/02-Ways-to-Make-the-Most-of-Your-Doctors-Appointment_First-appointment_93813283_cyano66-768x512.jpg');
+          height: 550px; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;">
+        <div class="mask rgba-gradient align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 white-text text-center text-md-left mt-xl-5 mb-5">
+                <br><br><br><br><br><br>
+                <h3 class="h3-responsive font-weight-bold">Sign Up</h3>
+                <hr class="hr-light">
+                <h6 class="mb-4"><%= link_to "As Patient", new_patient_path, :class=>"btn btn-primary"%>
+                  <%= link_to "As Doctor", new_doctor_path, :class=>"btn btn-primary"%>
+                  <%= link_to "As Lab", new_lab_path, :class=>"btn btn-primary"%></h6>
+                <h3 class="h3-responsive font-weight-bold">Sign In</h3>
+                <hr class="hr-light">
+                <h6 class="mb-4"><%= link_to "As Patient", patients_login_path, :class=>"btn btn-primary"%>
+                  <%= link_to "As Doctor", doctors_login_path, :class=>"btn btn-primary"%>
+                  <%= link_to "As Lab", labs_login_path, :class=>"btn btn-primary"%></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   </div>
 </div>
 
@@ -34,6 +54,3 @@ DiMeRO
         </div>
       </center>
     </div>
-
-  </div>
-</div>
