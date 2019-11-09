@@ -1,40 +1,64 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @patient.name %>
-</p>
+<div class="container" style="font-size: larger">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;">
+        <div class="card-title" style="font-size: xx-large;"><br><b>Profile</b></div>
+        <div class="card-body" align="left">
 
-<p>
-  <strong>Height:</strong>
-  <%= @patient.height %>
-</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+              <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+              <p>
+                <strong>Name:</strong>
+                <%= @patient.name %>
+              </p>
 
-<p>
-  <strong>Weight:</strong>
-  <%= @patient.weight %>
-</p>
+                <p>
+                  <strong>Height:</strong>
+                  <%= @patient.height %>
+                </p>
 
-<p>
-  <strong>Age:</strong>
-  <%= @patient.age %>
-</p>
+                <p>
+                  <strong>Weight:</strong>
+                  <%= @patient.weight %>
+                </p>
 
-<p>
-  <strong>Bg:</strong>
-  <%= @patient.bg %>
-</p>
+                <p>
+                  <strong>Age:</strong>
+                  <%= @patient.age %>
+                </p>
 
-<p>
-  <strong>Allergies:</strong>
-  <%= @patient.allergies %>
-</p>
+                <p>
+                  <strong>Bg:</strong>
+                  <%= @patient.bg %>
+                </p>
 
-<p>
-  <strong>Pic:</strong>
-  <%= @patient.pic %>
-</p>
+                <p>
+                  <strong>Allergies:</strong>
+                  <%= @patient.allergies %>
+                </p>
+              </div>
+            </div>
+          </div>
 
-<%= link_to 'Edit', edit_patient_path(@patient) %> |
-<%= link_to 'Back', patients_login_path %> |
-<%=link_to 'My Past Prescriptions', past_prescriptions_path(@patient) %>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="center">
+              <%= link_to 'Edit', edit_patient_path(@patient) , :class =>"btn btn-lg btn-success col-md-8 col-sm-8 col-xs-8"%>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="center">
+              <%= link_to 'Back', patients_login_path , :class =>"btn btn-lg btn-success col-md-8 col-sm-8 col-xs-8"%>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="center">
+              <%= link_to 'My Past Prescriptions', past_prescriptions_path(@patient) , :class =>"btn btn-lg btn-success col-md-11 col-sm-11 col-xs-11"%>        </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </center>
+  </div>
+</div>

@@ -1,25 +1,50 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @doctor.name %>
-</p>
+<div class="container" style="font-size: larger">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;">
+        <div class="card-title" style="font-size: xx-large;"><br><b>Profile</b></div>
+        <div class="card-body" align="left">
 
-<p>
-  <strong>Specialization:</strong>
-  <%= @doctor.specialization %>
-</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+              <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+                <p>
+                  <strong>Name:</strong>
+                  <%= @doctor.name %>
+                </p>
 
-<p>
-  <strong>Hospital:</strong>
-  <%= @doctor.hospital %>
-</p>
+                <p>
+                  <strong>Specialization:</strong>
+                  <%= @doctor.specialization %>
+                </p>
 
-<p>
-  <strong>Pic:</strong>
-  <%= @doctor.pic %>
-</p>
+                <p>
+                  <strong>Hospital:</strong>
+                  <%= @doctor.hospital %>
+                </p>
+              </div>
+            </div>
+          </div>
 
-<%= link_to 'Edit', edit_doctor_path(@doctor) %> |
-<%= link_to 'Back', doctors_path %>
-<%= link_to 'Add Prescription', new_prescription_path(@prescription) %> |
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="center">
+              <%= link_to 'Edit', edit_doctor_path(@doctor), :class =>"btn btn-lg btn-success col-md-8 col-sm-8 col-xs-8" %>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="center">
+              <%= link_to 'Back', doctors_path , :class =>"btn btn-lg btn-success col-md-8 col-sm-8 col-xs-8"%>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" align="center">
+              <%= link_to 'Add Prescription', new_prescription_path(@prescription), :class =>"btn btn-lg btn-success col-md-11 col-sm-11 col-xs-11" %>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </center>
+  </div>
+</div>

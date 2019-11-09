@@ -1,14 +1,40 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @lab.name %>
-</p>
+<div class="container" style="font-size: larger">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;">
+        <div class="card-title" style="font-size: xx-large;"><br><b>Profile</b></div>
+        <div class="card-body" align="left">
 
-<p>
-  <strong>Loc:</strong>
-  <%= @lab.loc %>
-</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+              <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
 
-<%= link_to  %>
+                <p>
+                  <strong>Name:</strong>
+                  <%= @lab.name %>
+                </p>
+
+                <p>
+                  <strong>Loc:</strong>
+                  <%= @lab.loc %>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
+        <br>
+      </div>
+    </center>
+  </div>
+</div>
+
+
+
+
 

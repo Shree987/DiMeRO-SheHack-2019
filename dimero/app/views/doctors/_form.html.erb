@@ -16,7 +16,7 @@
       <div class="item form-group">
         <label class="control-label" >Name </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :name %>
+          <%= form.text_field :name, required: true  %>
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@
       <div class="item form-group">
         <label class="control-label" >Specialization </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :specialization %>
+          <%= form.text_field :specialization, required: true  %>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
       <div class="item form-group">
         <label class="control-label" >Hospital name </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :hospital %>
+          <%= form.text_field :hospital, required: true  %>
         </div>
       </div>
     </div>
@@ -45,9 +45,9 @@
   <br>
   <center>
     <div class="actions">
-      <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-3 col-sm-5 col-xs-5" %>
+      <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
 
-      <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-3 col-sm-5 col-xs-5" %>
+      <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
     </div>
   </center>
 <% end %>

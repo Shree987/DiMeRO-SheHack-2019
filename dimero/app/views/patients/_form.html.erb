@@ -15,7 +15,7 @@
       <div class="item form-group">
         <label class="control-label" >Name </label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :name %>
+          <%= form.text_field :name, required: true  %>
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@
       <div class="item form-group">
         <label class="control-label" >Height (in cm)</label>
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :height %>
+          <%= form.text_field :height, required: true  %>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
         <div class="item form-group">
           <label class="control-label">Weight (in kg)</label>
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <%= form.text_field :weight %>
+            <%= form.text_field :weight, required: true  %>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
           <div class="item form-group">
             <label class="control-label" >Age (in yrs)</label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <%= form.text_field :age %>
+              <%= form.text_field :age, required: true  %>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
             <div class="item form-group">
               <label class="control-label" >Blood Group </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <%= form.text_field :bg %>
+                <%= form.text_field :bg, required: true  %>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
             <div class="item form-group">
               <label class="control-label" >Allergies (if any) </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <%= form.text_field :allergies %>
+                <%= form.text_field :allergies, required: true %>
               </div>
             </div>
           </div>
@@ -75,9 +75,9 @@
     <br>
   <center>
     <div class="actions">
-    <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-3 col-sm-5 col-xs-5" %>
+    <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
 
-  <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-3 col-sm-5 col-xs-5" %>
+  <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
     </div>
   </center>
 <% end %>
