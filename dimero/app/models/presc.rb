@@ -1,2 +1,0 @@
-class Presc < ApplicationRecord
-end

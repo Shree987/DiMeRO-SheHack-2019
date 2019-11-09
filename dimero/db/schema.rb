@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_09_130605) do
+ActiveRecord::Schema.define(version: 2019_11_09_175104) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -61,14 +61,13 @@ ActiveRecord::Schema.define(version: 2019_11_09_130605) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "prescs", force: :cascade do |t|
+  create_table "prescriptions", force: :cascade do |t|
     t.date "date"
-    t.integer "pid"
-    t.integer "did"
+    t.integer "patient_id"
+    t.integer "doctor_id"
     t.string "presname"
     t.string "pres_sym"
     t.string "pres_obs"
-    t.string "pres"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
