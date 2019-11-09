@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-
+  get 'prescriptions/new'
+  get 'prescriptions/show'
+  root :controller => 'main', :action => 'home'
   get 'main/home'
 
   get "/labs/login" => "labs#login"
