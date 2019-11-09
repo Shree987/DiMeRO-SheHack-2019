@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :prescriptions
   get 'prescriptions/new'
   get 'prescriptions/show'
   root :controller => 'main', :action => 'home'

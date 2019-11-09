@@ -4,13 +4,27 @@
       <h2><%= pluralize(prescription.errors.count, "error") %> prohibited this prescription from being saved:</h2>
 
       <ul>
-        <% prescription.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
+      <% prescription.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
       </ul>
-
     </div>
   <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :patient_id %>
+    <%= form.number_field :patient_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doctor_id %>
+    <%= form.number_field :doctor_id %>
+  </div>
 
   <div class="field">
     <%= form.label :presname %>
@@ -19,22 +33,12 @@
 
   <div class="field">
     <%= form.label :pres_sym %>
-    <%= form.text_field :pres_sym  %>
+    <%= form.text_field :pres_sym %>
   </div>
 
   <div class="field">
     <%= form.label :pres_obs %>
     <%= form.text_field :pres_obs %>
-  </div>
-
-  <div class="field">
-    <%= form.label :pid %>
-    <%= form.text_field :pid %>
-  </div>
-
-  <div class="field">
-    <%= form.label :did %>
-    <%= form.text_field :did %>
   </div>
 
   <div class="actions">
