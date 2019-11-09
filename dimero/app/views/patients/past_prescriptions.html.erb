@@ -1,0 +1,34 @@
+<h1>Past Patient Records</h1>
+<% @past_prescs.each do |p| %>
+
+    <strong>Date:</strong>
+    <%= p.date %>
+
+
+
+    <strong>Patient:</strong>
+    <%= p.patient_id %>
+
+
+
+    <strong>Doctor:</strong>
+    <%= p.doctor_id %>
+
+
+
+    <strong>Presname:</strong>
+    <%=p.presname %>
+
+
+
+    <strong>Pres sym:</strong>
+    <%= p.pres_sym %>
+
+
+
+    <strong>Pres obs:</strong>
+    <%= p.pres_obs %>
+  <br>
+
+<% end %>
+<br>
