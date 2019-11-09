@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root :controller => "main", :action => 'home'
   get 'main/home'
 
   get "/labs/login" => "labs#login"
