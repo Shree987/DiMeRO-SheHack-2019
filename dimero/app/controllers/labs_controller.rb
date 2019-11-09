@@ -16,6 +16,17 @@ class LabsController < ApplicationController
   def show
   end
 
+  def det
+    id=params['lab_id']
+    @lab = Lab.find(id)
+    render :action => 'show'
+  end
+
+  def login
+
+
+  end
+
   # GET /labs/new
   def new
     @lab = Lab.new
