@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
+  root :controller => 'main', :action => 'home'
+  get 'main/home'
   resources :reports
   resources :prescriptions
   get 'prescriptions/new'
   get 'prescriptions/show'
-  root :controller => 'main', :action => 'home'
 
-  get 'main/home'
-
+  get ''
   get '/patients/past_prescriptions/:id' => 'patients#past_prescriptions', :as => 'past_prescriptions'
   get '/patients/past_reports/:id' => 'patients#past_reports', :as => 'past_reports'
 

@@ -4,16 +4,7 @@
     <list default="true" id="2c1a47ec-d676-4872-bc0e-6f4a4d411488" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/dimero/.idea/dimero.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dimero/app/views/prescriptions/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/doctors/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/doctors/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/doctors/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/doctors/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/doctors/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/doctors/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/labs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/labs/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/labs/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/labs/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/labs/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/labs/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/patients/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/patients/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/patients/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/patients/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/app/views/patients/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/app/views/patients/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dimero/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dimero/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +111,7 @@
       <workItem from="1573292679629" duration="22000" />
       <workItem from="1573292717898" duration="670000" />
       <workItem from="1573293905336" duration="17841000" />
-      <workItem from="1573315215552" duration="17968000" />
+      <workItem from="1573315215552" duration="19521000" />
     </task>
     <task id="LOCAL-00001" summary="setup1">
       <created>1573281440424</created>
