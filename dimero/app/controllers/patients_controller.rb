@@ -1,5 +1,5 @@
 class PatientsController < ApplicationController
-  before_action :set_patient, only: [:show, :edit, :update, :destroy, :past_prescriptions]
+  before_action :set_patient, only: [:show, :edit, :update, :destroy, :past_prescriptions, :past_reports]
 
   # GET /patients
   # GET /patients.json
@@ -19,6 +19,10 @@ class PatientsController < ApplicationController
 
   def past_prescriptions
     @past_prescs=Prescription.where(:patient_id => @patient.id).order('date DESC')
+  end
+
+  def past_reports
+    @past_reps=Report.where(:patient_id => @patient.id).order('date DESC')
   end
 
   def det

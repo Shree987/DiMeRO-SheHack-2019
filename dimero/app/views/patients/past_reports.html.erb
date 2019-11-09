@@ -1,0 +1,23 @@
+<h1>Past Patient Records</h1>
+<% @past_reps.each do |p| %>
+  <strong>Date:</strong>
+  <%= p.date %>
+
+
+
+  <strong>Pid:</strong>
+  <%= p.patient_id %>
+
+
+
+  <strong>Repname:</strong>
+  <%= p.repname %>
+
+
+<br>
+
+  <%= link_to 'View Report', rails_blob_path(p.rep, disposition: 'preview') %>
+  <br>
+<%end %>
+<br>
+<%= link_to 'Back', reports_path %>

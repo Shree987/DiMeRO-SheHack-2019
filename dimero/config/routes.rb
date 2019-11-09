@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :reports
   resources :prescriptions
   get 'prescriptions/new'
   get 'prescriptions/show'
@@ -8,6 +9,8 @@ Rails.application.routes.draw do
   get 'main/home'
 
   get '/patients/past_prescriptions/:id' => 'patients#past_prescriptions', :as => 'past_prescriptions'
+  get '/patients/past_reports/:id' => 'patients#past_reports', :as => 'past_reports'
+
   get "/labs/login" => "labs#login"
   post "/labs/det" => "labs#det"
   resources :labs, :except => [:destroy] do

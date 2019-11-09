@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @report.date %>
+</p>
+
+<p>
+  <strong>Pid:</strong>
+  <%= @report.pid %>
+</p>
+
+<p>
+  <strong>Repname:</strong>
+  <%= @report.repname %>
+
+
+</p>
+
+<p>
+  <%= link_to 'View Report', rails_blob_path(@report.rep, disposition: 'preview') %>
+</p>
+
+<%= link_to 'Back', reports_path %>
