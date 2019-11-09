@@ -30,6 +30,14 @@ class LabsController < ApplicationController
     @lab = Lab.new
   end
 
+  def upload
+    id=params[]
+  end
+
+  def toupload
+
+  end
+
   # GET /labs/1/edit
   def edit
   end

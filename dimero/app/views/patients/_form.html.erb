@@ -1,40 +1,49 @@
 <%= form_with(model: patient, local: true) do |form| %>
   <% if patient.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(pat.errors.count, "error") %> prohibited this prescription from being saved:</h2>
+      <h2><%= pluralize(patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
 
       <ul>
-      <% patient.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% patient.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
-
     </div>
   <% end %>
 
   <div class="field">
-    <%= form.label :presname %>
-    <%= form.text_field :presname %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :pres_sym %>
-    <%= form.text_field :pres_sym  %>
+    <%= form.label :height %>
+    <%= form.text_field :height %>
   </div>
 
   <div class="field">
-    <%= form.label :pres_obs %>
-    <%= form.text_field :pres_obs %>
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
   </div>
 
   <div class="field">
-    <%= form.label :pid %>
-    <%= form.text_field :pid %>
+    <%= form.label :age %>
+    <%= form.number_field :age %>
   </div>
 
   <div class="field">
-    <%= form.label :did %>
-    <%= form.text_field :did %>
+    <%= form.label :bg %>
+    <%= form.text_field :bg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :allergies %>
+    <%= form.text_field :allergies %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pic %>
+    <%= form.text_field :pic %>
   </div>
 
   <div class="actions">
