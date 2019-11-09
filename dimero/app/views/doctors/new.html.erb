@@ -1,5 +1,14 @@
-<h1>New Doctor</h1>
-
-<%= render 'form', doctor: @doctor %>
-
-<%= link_to 'Back', doctors_path %>
+<br>
+<br>
+<div class="container">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;" align="left" >
+        <div class="card-title" style="font-size: x-large;" align="center"><br><b>Form for doctor</b></div>
+        <div class="card-body">
+          <%= render 'form', doctor: @doctor %>
+        </div>
+      </div>
+    </center>
+  </div>
+</div>

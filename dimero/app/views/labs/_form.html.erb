@@ -11,17 +11,36 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+  <div style="font-size: large">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="item form-group">
+        <label class="control-label" >Name </label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <%= form.text_field :name %>
+        </div>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :loc %>
-    <%= form.text_field :loc %>
-  </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="item form-group">
+        <label class="control-label" >Location </label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <%= form.text_field :loc %>
+        </div>
+      </div>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
+
   </div>
+  <br>
+  <center>
+    <div class="actions">
+      <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-3 col-sm-5 col-xs-5" %>
+
+      <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-3 col-sm-5 col-xs-5" %>
+    </div>
+  </center>
 <% end %>
+
+
+

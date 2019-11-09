@@ -72,6 +72,18 @@ ActiveRecord::Schema.define(version: 2019_11_09_175104) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "prescs", force: :cascade do |t|
+    t.date "date"
+    t.integer "pid"
+    t.integer "did"
+    t.string "presname"
+    t.string "pres_sym"
+    t.string "pres_obs"
+    t.string "pres"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "reports", force: :cascade do |t|
     t.date "date"
     t.integer "pid"
