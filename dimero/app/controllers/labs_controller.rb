@@ -20,8 +20,6 @@ class LabsController < ApplicationController
   end
 
   def login
-
-
   end
 
   # GET /labs/new

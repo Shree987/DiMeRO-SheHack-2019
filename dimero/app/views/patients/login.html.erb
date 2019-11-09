@@ -1,0 +1,10 @@
+<h1>LOGIN as PATIENT</h1>
+
+<%=form_tag patients_det_path, method:"post" do %>
+  <div class="field">
+    <%= text_field_tag("patient_id") %>
+  </div>
+  <%= submit_tag "Login to Patient" %>
+
+  <%end %>
+<%= link_to 'Back', patients_path %>

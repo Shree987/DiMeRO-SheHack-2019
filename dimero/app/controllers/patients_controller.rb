@@ -17,6 +17,12 @@ class PatientsController < ApplicationController
     @patient = Patient.new
   end
 
+  def det
+    id=params['patient_id']
+    @patient = Patient.find(id)
+    render :action => 'show'
+  end
+
   # GET /patients/1/edit
   def edit
   end

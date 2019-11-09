@@ -7,6 +7,12 @@ class DoctorsController < ApplicationController
     @doctors = Doctor.all
   end
 
+  def det
+    id=params['doctor_id']
+    @doctor = Doctor.find(id)
+    render :action => 'show'
+  end
+
   # GET /doctors/1
   # GET /doctors/1.json
   def show

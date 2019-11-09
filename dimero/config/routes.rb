@@ -10,11 +10,20 @@ Rails.application.routes.draw do
     end
   end
 
+  get "/doctors/login" => "doctors#login"
+  post "/doctors/det" => "doctors#det"
+  resources :doctors, :except => [:destroy] do
+    collection do
 
+    end
+  end
 
-  resources :doctors
-  resources :patients
-  resources :labs
+  get "/patients/login" => "patients#login"
+  post "/patients/det" => "patients#det"
+  resources :patients, :except => [:destroy] do
+    collection do
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    end
+  end
+
 end
