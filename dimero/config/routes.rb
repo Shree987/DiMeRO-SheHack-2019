@@ -7,12 +7,11 @@ Rails.application.routes.draw do
 
   get 'main/home'
 
+  get '/patients/past_prescriptions' => 'patients#past_prescriptions', :as => 'past_prescriptions'
   get "/labs/login" => "labs#login"
   post "/labs/det" => "labs#det"
-           resources :labs, :except => [:destroy] do
-    collection do
+  resources :labs, :except => [:destroy] do
 
-    end
   end
 
   get "/doctors/login" => "doctors#login"

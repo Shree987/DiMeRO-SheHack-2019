@@ -36,5 +36,5 @@
 </p>
 
 <%= link_to 'Edit', edit_patient_path(@patient) %> |
-<%= link_to 'Back', patients_path %>
-<%= link_to 'View past prescriptions', show_ %>
+<%= link_to 'Back', patients_path %> |
+<%=link_to 'My Past Prescriptions', past_prescriptions_path(@patient.id) %>

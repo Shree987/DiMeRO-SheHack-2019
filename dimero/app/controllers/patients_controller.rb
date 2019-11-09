@@ -17,6 +17,10 @@ class PatientsController < ApplicationController
     @patient = Patient.new
   end
 
+  def past_prescriptions
+    @past_prescs=Prescription.where(:patient_id => @patient.id).order('date DESC')
+  end
+
   def det
     id=params['patient_id']
     @patient = Patient.find(id)
