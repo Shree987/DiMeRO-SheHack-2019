@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-11-09
+  pid: 1
+  did: 1
+  presname: MyString
+  pres_sym: MyString
+  pres_obs: MyString
+  pres: MyString
+
+two:
+  date: 2019-11-09
+  pid: 1
+  did: 1
+  presname: MyString
+  pres_sym: MyString
+  pres_obs: MyString
+  pres: MyString
