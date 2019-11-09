@@ -7,6 +7,9 @@ class LabsController < ApplicationController
     @labs = Lab.all
   end
 
+  def login
+
+  end
 
   # GET /labs/1
   # GET /labs/1.json
