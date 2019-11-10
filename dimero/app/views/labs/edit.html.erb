@@ -1,6 +1,14 @@
-<h1>Editing Lab</h1>
-
-<%= render 'form', lab: @lab %>
-
-<%= link_to 'Show', @lab %> |
-<%= link_to 'Back', labs_path %>
+<br>
+<br>
+<div class="container">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;" align="left" >
+        <div class="card-title" style="font-size: x-large;" align="center"><br><b>Editing your profile</b></div>
+        <div class="card-body">
+          <%= render 'form', lab: @lab %>
+        </div>
+      </div>
+    </center>
+  </div>
+</div>

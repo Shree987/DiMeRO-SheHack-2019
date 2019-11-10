@@ -1,10 +1,35 @@
-<h1>LOGIN as DOCTOR</h1>
+<br>
+<br>
+<div class="container">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;" align="left" >
+        <div class="card-title" style="font-size: x-large;" align="center"><br><b>Login as Doctor</b></div>
+        <div class="card-body">
 
-<%=form_tag doctors_det_path, method:"post" do %>
-  <div class="field">
-    <%= text_field_tag("doctor_id") %>
+          <%=form_tag doctors_det_path, method:"post" do %>
+            <div style="font-size: large">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="item form-group">
+                  <label class="control-label" >Doctor ID </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <%= number_field_tag :doctor_id, "", :required => true, :min => 1 , :step =>1 %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <center>
+              <%= submit_tag  "Login as Doctor", :class =>"btn btn-lg btn-success col-md-3 col-sm-3 col-xs-3" %>
+              <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-3 col-sm-3 col-xs-3" %>
+            </center>
+          <%end %>
+
+        </div>
+      </div>
+    </center>
   </div>
-  <%= submit_tag "Login to Doctor" %>
+</div>
 
-  <%end %>
-<%= link_to 'Back', root_path %>
+
+
