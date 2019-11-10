@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   get 'prescriptions/new'
   get 'prescriptions/show'
 
-  get ''
   get '/patients/past_prescriptions/:id' => 'patients#past_prescriptions', :as => 'past_prescriptions'
   get '/patients/past_reports/:id' => 'patients#past_reports', :as => 'past_reports'
 

@@ -1,4 +1,11 @@
-<p id="notice"><%= notice %></p>
+<%= if notice then%>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert" id="notice">
+    <strong>Alert!</strong> <%= notice %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<%end %>
 
 <div class="container" style="font-size: larger">
   <div class="jumbotron text-dark">
@@ -26,12 +33,12 @@
             </div>
           </div>
         </div>
+      </div>
 
+    </center>
         <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
         <%= link_to 'Upload Report', new_report_path, :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
         <br>
-      </div>
-    </center>
   </div>
 </div>
 

@@ -1,6 +1,14 @@
-<h1>Editing Patient</h1>
-
-<%= render 'form', patient: @patient %>
-
-<%= link_to 'Show', @patient %> |
-<%= link_to 'Back', patients_path %>
+<br>
+<br>
+<div class="container">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;" align="left" >
+        <div class="card-title" style="font-size: x-large;" align="center"><br><b>Editing your profile</b></div>
+        <div class="card-body">
+          <%= render 'form', patient: @patient %>
+        </div>
+      </div>
+    </center>
+  </div>
+</div>

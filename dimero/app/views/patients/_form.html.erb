@@ -10,52 +10,18 @@
       </ul>
     </div>
   <% end %>
-<div style="font-size: large">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="item form-group">
-        <label class="control-label" >Name </label>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :name, required: true  %>
-        </div>
-      </div>
-    </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+      <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
 
-    <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="item form-group">
-        <label class="control-label" >Height (in cm)</label>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :height, required: true  %>
-        </div>
-      </div>
-    </div>
-
-
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="item form-group">
-          <label class="control-label">Weight (in kg)</label>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <%= form.text_field :weight, required: true  %>
-          </div>
-        </div>
-      </div>
-
-
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="item form-group">
-            <label class="control-label" >Age (in yrs)</label>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <%= form.text_field :age, required: true  %>
-            </div>
-          </div>
-        </div>
-
-
+      <div style="font-size: large">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="item form-group">
-              <label class="control-label" >Blood Group </label>
+              <label class="control-label" >Name </label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <%= form.text_field :bg, required: true  %>
+                <%= form.text_field :name, required: true  %>
               </div>
             </div>
           </div>
@@ -63,15 +29,58 @@
 
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="item form-group">
-              <label class="control-label" >Allergies (if any) </label>
+              <label class="control-label" >Height (in cm)</label>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <%= form.text_field :allergies, required: true %>
+                <%= form.number_field :height, step: 0.01 ,required: true  %>
               </div>
             </div>
           </div>
 
 
-</div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="item form-group">
+                <label class="control-label">Weight (in kg)</label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <%= form.number_field :weight, step: 0.01, required: true  %>
+                </div>
+              </div>
+            </div>
+
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="item form-group">
+                  <label class="control-label" >Age (in yrs)</label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <%= form.number_field :age, required: true  %>
+                  </div>
+                </div>
+              </div>
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="item form-group">
+                    <label class="control-label" >Blood Group </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <%= form.text_field :bg, required: true  %>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="item form-group">
+                    <label class="control-label" >Allergies (if any) </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <%= form.text_field :allergies, required: true %>
+                    </div>
+                  </div>
+                </div>
+
+
+      </div>
+      </div>
+    </div>
+  </div>
     <br>
   <center>
     <div class="actions">

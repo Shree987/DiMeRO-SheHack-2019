@@ -10,37 +10,40 @@
       </ul>
     </div>
   <% end %>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+              <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
 
-  <div style="font-size: large">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="item form-group">
-        <label class="control-label" >Lab name </label>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :name , required: true %>
-        </div>
-      </div>
-    </div>
+                  <div style="font-size: large">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="item form-group">
+                        <label class="control-label" >Lab name </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <%= form.text_field :name , required: true %>
+                        </div>
+                      </div>
+                    </div>
 
-    <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="item form-group">
-        <label class="control-label" >Location of lab</label>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <%= form.text_field :loc , required: true%>
-        </div>
-      </div>
-    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="item form-group">
+                        <label class="control-label" >Location of lab</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <%= form.text_field :loc , required: true%>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
+              </div>
+            </div>
+          </div>
+          <br>
+          <center>
+            <div class="actions">
+              <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
 
-  </div>
-  <br>
-  <center>
-    <div class="actions">
-      <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
-
-      <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
-    </div>
-  </center>
+              <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
+            </div>
+          </center>
 <% end %>
-
-
-
