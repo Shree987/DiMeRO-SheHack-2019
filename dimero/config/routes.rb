@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
-
-  root :controller => 'main', :action => 'home'
   get 'main/home'
+  root :controller => 'main', :action => 'home'
+
   resources :reports
   resources :prescriptions
   get 'prescriptions/new'
   get 'prescriptions/show'
 
-  get ''
   get '/patients/past_prescriptions/:id' => 'patients#past_prescriptions', :as => 'past_prescriptions'
   get '/patients/past_reports/:id' => 'patients#past_reports', :as => 'past_reports'
 
@@ -19,6 +18,8 @@ Rails.application.routes.draw do
 
   get "/doctors/login" => "doctors#login"
   post "/doctors/det" => "doctors#det"
+  post '/doctors/consult'  => "doctors#consult", :as => 'doctors_consult'
+
   resources :doctors, :except => [:destroy] do
     collection do
 

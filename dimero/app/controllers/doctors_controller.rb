@@ -13,6 +13,11 @@ class DoctorsController < ApplicationController
     render :action => 'show'
   end
 
+  def consult
+    id=params['patient_id']
+    @patient = Patient.find(id)
+  end
+
   # GET /doctors/1
   # GET /doctors/1.json
   def show
