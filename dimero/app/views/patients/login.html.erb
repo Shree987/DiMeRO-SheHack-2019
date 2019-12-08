@@ -13,15 +13,16 @@
               <div class="item form-group">
                 <label class="control-label" >Patient ID </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <%= number_field_tag :patient_id, "", :required => true, :min => 1  , :step =>1%>
+                  <%= number_field_tag :patient_id, "", :required => true, :min => 1 , :step =>1%>
                 </div>
               </div>
             </div>
           </div>
             <br>
             <center>
-            <%= submit_tag  "Login as Patient", :class =>"btn btn-lg btn-success col-md-3 col-sm-3 col-xs-3" %>
-            <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-3 col-sm-3 col-xs-3" %>
+            <%= submit_tag  "Login as Patient", :class =>"btn btn-lg btn-primary col-md-3 col-sm-3 col-xs-3" %>
+
+            <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-primary col-md-2 col-sm-2 col-xs-2" %>
             </center>
           <%end %>
 

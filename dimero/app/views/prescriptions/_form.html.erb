@@ -2,46 +2,77 @@
   <% if prescription.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(prescription.errors.count, "error") %> prohibited this prescription from being saved:</h2>
-
       <ul>
-      <% prescription.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% prescription.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.date_select :date %>
+  <div class="container">
+    <div style="font-size: large">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+         <label class="control-label" >Name </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <%= form.date_select :date, required: true  %>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Patient ID </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.number_field :patient_id, required: true  %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Doctor ID </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.number_field :doctor_id, required: true  %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Prescription Name </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.text_field :presname, required: true  %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Symptom </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.text_field :pres_sym, required: true  %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Observation </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.text_field :pres_obs, required: true  %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :patient_id %>
-    <%= form.number_field :patient_id %>
-  </div>
+  <br>
+  <center>
+    <div class="actions">
+      <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
+    </div>
+  </center>
 
-  <div class="field">
-    <%= form.label :doctor_id %>
-    <%= form.number_field :doctor_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :presname %>
-    <%= form.text_field :presname %>
-  </div>
-
-  <div class="field">
-    <%= form.label :pres_sym %>
-    <%= form.text_field :pres_sym %>
-  </div>
-
-  <div class="field">
-    <%= form.label :pres_obs %>
-    <%= form.text_field :pres_obs %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>

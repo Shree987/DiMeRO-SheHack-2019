@@ -11,27 +11,50 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.date_select :date %>
+  <div class="container">
+    <div style="font-size: large">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Name </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.date_select :date, required: true  %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Patient ID </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.number_field :pid, required: true  %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Report Name </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.text_field :repname, required: true  %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="item form-group">
+          <label class="control-label" >Report </label>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <%= form.file_field :rep, required: true  %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :pid %>
-    <%= form.number_field :pid %>
-  </div>
-
-  <div class="field">
-    <%= form.label :repname %>
-    <%= form.text_field :repname %>
-  </div>
-
-  <div class="field">
-    <%= form.label :rep %>
-    <%= form.file_field :rep %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <br>
+  <center>
+    <div class="actions">
+      <%= form.submit "Submit", :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
+    </div>
+  </center>
 <% end %>

@@ -1,35 +1,59 @@
-<h1>Past Patient Records</h1>
-<% @past_prescs.each do |p| %>
-
-    <strong>Date:</strong>
-    <%= p.date %>
-
-
-
-    <strong>Patient:</strong>
-    <%= p.patient_id %>
-
-
-
-    <strong>Doctor:</strong>
-    <%= p.doctor_id %>
-
-
-
-    <strong>Presname:</strong>
-    <%=p.presname %>
-
-
-
-    <strong>Pres sym:</strong>
-    <%= p.pres_sym %>
-
-
-
-    <strong>Pres obs:</strong>
-    <%= p.pres_obs %>
-  <br>
-
-<% end %>
 <br>
-<%= link_to 'Back to Login', patients_login_path %>
+<br>
+<div class="container">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;" align="left" >
+        <div class="card-title" style="font-size: x-large;" align="center"><br><b>Past Patient Records</b></div>
+        <div class="card-subtitle" style="font-size: x-large;" align="center">Prescription</div>
+        <div class="card-body">
+
+          <% @past_prescs.each do |p| %>
+
+            <strong>Date:</strong>
+            <%= p.date %>
+
+
+
+            <strong>Patient:</strong>
+            <%= p.patient_id %>
+
+
+
+            <strong>Doctor:</strong>
+            <%= p.doctor_id %>
+
+
+
+            <strong>Prescription name:</strong>
+            <%=p.presname %>
+
+
+
+            <strong>Pres sym:</strong>
+            <%= p.pres_sym %>
+
+
+
+            <strong>Pres observation:</strong>
+            <%= p.pres_obs %>
+            <br>
+
+          <% end %>
+          <br>
+          <div style="text-align:center;">
+            <%= link_to 'Back to Login', patients_login_path, :class=>"btn btn-primary" %>
+          </div>
+        </div>
+      </div>
+    </center>
+  </div>
+</div>
+
+
+
+
+
+
+
+

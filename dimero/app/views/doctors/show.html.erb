@@ -40,10 +40,10 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" align="center">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="text-align:center;">
               <%= link_to 'Edit', edit_doctor_path(@doctor), :class =>"btn btn-lg btn-success col-md-6 col-sm-6 col-xs-6" %>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" align="center">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="text-align:center;">
               <%= link_to 'Back', doctors_login_path , :class =>"btn btn-lg btn-success col-md-6 col-sm-6 col-xs-6"%>
             </div>
           </div>
@@ -53,7 +53,7 @@
       <br>
       <div class="card" style="width:95%;">
         <div class="card-title" style="font-size: xx-large;"><br><b>Consult</b></div>
-        <div class="card-body" align="left">
+        <div class="card-body" style="text-align:left;">
 
           <div class="container">
             <div class="row">
@@ -70,10 +70,11 @@
                     </div>
                   </div>
                 </div>
-                    <div class="actions">
-                      <%= submit_tag "Consult Patient", :class =>"btn btn-lg btn-success col-md-4 col-sm-4 col-xs-4" %>
+                    <div class="actions" style="text-align:center;">
+                      <br>
+                      <%= submit_tag "Consult Patient", :class =>"btn btn-lg btn-success col-md-3 col-sm-3 col-xs-3" %>
 
-                      <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-2 col-sm-3 col-xs-3" %>
+                      <%= link_to 'Back', root_path, :class =>"btn btn-lg btn-success col-md-3 col-sm-3 col-xs-3" %>
                     </div>
                 <% end %>
               </div>

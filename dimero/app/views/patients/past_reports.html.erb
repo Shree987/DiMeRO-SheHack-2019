@@ -1,23 +1,33 @@
-<h1>Past Patient Records</h1>
-<% @past_reps.each do |p| %>
-  <strong>Date:</strong>
-  <%= p.date %>
-
-
-
-  <strong>Pid:</strong>
-  <%= p.patient_id %>
-
-
-
-  <strong>Repname:</strong>
-  <%= p.repname %>
-
-
 <br>
-
-  <%= link_to 'View Report', rails_blob_path(p.rep, disposition: 'preview') %>
-  <br>
-<%end %>
 <br>
-<%= link_to 'Back to Login', patients_login_path %>
+<div class="container">
+  <div class="jumbotron text-dark">
+    <center>
+      <div class="card" style="width:95%;" align="left" >
+        <div class="card-title" style="font-size: x-large;" align="center"><br><b>Past Patient Records</b></div>
+        <div class="card-subtitle" style="font-size: x-large;" align="center">Reports</div>
+        <div class="card-body">
+              <% @past_reps.each do |p| %>
+                <strong>Date:</strong>
+                <%= p.date %>
+
+                <strong>Patient ID:</strong>
+                <%= p.patient_id %>
+
+                <strong>Report name:</strong>
+                <%= p.repname %>
+
+                <br>
+
+                <%= link_to 'View Report', rails_blob_path(p.rep, disposition: 'preview') , :class=>"btn btn-primary"%>
+                <br>
+              <%end %>
+              <br>
+              <div style="text-align:center;">
+                <%= link_to 'Back to Login', patients_login_path, :class=>"btn btn-primary" %>
+              </div>
+        </div>
+      </div>
+    </center>
+  </div>
+</div>
